@@ -93,9 +93,12 @@ const Card: React.FC<IListData & IProps> = ({ bg, category, index, moveCard, id 
         padding: '20px 0px',
         verticalAlign: 40,
         width: 288,
+        cursor: 'move',
     };
 
     // 使用 drag 和 drop 对 ref 进行包裹，则组件既可以进行拖拽也可以接收拖拽组件
+    // drag(ref);
+    // drop(ref);
     drag(drop(ref));
     
     return (
